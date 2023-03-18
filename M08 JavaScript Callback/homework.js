@@ -5,12 +5,19 @@ function mayuscula(nombre) {
    // Debe devolver el mismo nombre, pero con la primera letra en mayúscula.
    // [Ejemplo]: "mario" ----> "Mario".
    // Tu código:
+   var primeraletra = nombre[0].toUpperCase()
+   var resto = nombre.shift()
+   return primeraletra + resto
 }
+// en la clase de arreglos vimos que los string se podian tratar como arreglos
+// en el video en lugar de nombre.shift usan nombre.substr[1]  (osea que traiga todo el arreglo a partir del
+// indice 1, pero el shift deberia modificar el string borrandole el primer elemento)
 
 function invocarCallback(cb) {
    // Invoca/ejecuta el callback `cb`.
    // [NOTA]: no debes reotrnar nada.
    // Tu código:
+   cb()
 }
 
 function operacionMatematica(num1, num2, cb) {
